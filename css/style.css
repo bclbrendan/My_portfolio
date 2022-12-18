@@ -21,7 +21,7 @@ justify-content: space-between;
 background-color:rgb(10,38,109) ;
 color:rgba(237, 209, 27, 0.877);
 height:50px;
-
+align-items: center;
 }
 header h1{
   padding-left: 50px;
@@ -39,7 +39,8 @@ ul{
 }
 li{
   padding:0 25px 0 25px;
-  width:175px;
+  width:150px;
+  text-align: center;
 }
 body {
   margin: 0;
@@ -48,14 +49,35 @@ body {
   line-height: 1.5;
 }
 .hero-banner{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
   background-image:url(../images/02-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position:initial;
   background-size:100%;
-  height: 200px;
+  height: 250px;
   width: 1fr;
+  /*filter:sepia(100%) hue-rotate(10deg) saturate(200%);*/
+   
+}
+.hero-banner img{
+  height:175px;
+  width:100%;
 
 }
+.hero-banner h2{
+
+  background-color: rgb(10,38,109);
+  color: rgba(237, 209, 27, 0.877);
+}
+.page-wrapper h2{
+  font-size:20px;
+}
+
+
+
 
 
 

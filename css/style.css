@@ -59,7 +59,7 @@ body {
   background-size:100%;
   height: 250px;
   width: 1fr;
-  /*filter:sepia(100%) hue-rotate(10deg) saturate(200%);*/
+ filter:sepia(100%) hue-rotate(10deg) saturate(200%);
    
 }
 .hero-banner img{
@@ -75,6 +75,49 @@ body {
 .page-wrapper h2{
   font-size:20px;
 }
+.page-section{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right:50px;
+}
+.work-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  justify-content: center;
+ grid-template-areas: 'one one' 
+  'two three' 
+  'four five';
+
+}
+.grid-item img{
+  height:200px;
+  background-position: center;
+  }
+  
+#one{
+background-image: url(../images/02-portfolio-1.jpg);
+grid-area: one;
+}
+#two{
+background-image: url(../images/02-portfolio-1.jpg);
+grid-area: two;
+}
+#three{
+  background-image: url(../images/02-portfolio-1.jpg);
+  grid-area: three;
+}
+#four{
+  background-image: url(../images/02-portfolio-1.jpg);
+  grid-area: four;
+  }
+#five{
+    background-image: url(../images/02-portfolio-1.jpg);
+    grid-area: five; 
+    }
+
+
 
 
 
